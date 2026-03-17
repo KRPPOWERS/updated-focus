@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔑 Required Permissions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FocusGuard needs 3 permissions to work. Tap each button to grant them."
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:paddingBottom="16dp"/>
+
+        <!-- Accessibility -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1️⃣ Accessibility Service"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detects which app is in foreground so FocusGuard can block it."
+                    android:textSize="13sp"
+                    android:textColor="#757575"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:id="@+id/tvAccessStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Checking..."
+                    android:textSize="13sp"
+                    android:paddingBottom="8dp"/>
+                <Button
+                    android:id="@+id/btnAccessibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Open Accessibility Settings"
+                    android:backgroundTint="#1A237E"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Usage Stats -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2️⃣ Usage Access (Screen Time)"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tracks time spent in apps to show usage warnings."
+                    android:textSize="13sp"
+                    android:textColor="#757575"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:id="@+id/tvUsageStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Checking..."
+                    android:textSize="13sp"
+                    android:paddingBottom="8dp"/>
+                <Button
+                    android:id="@+id/btnUsageStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Open Usage Access Settings"
+                    android:backgroundTint="#4A148C"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Overlay -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3️⃣ Display Over Other Apps"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allows warning screens to appear on top of blocked apps."
+                    android:textSize="13sp"
+                    android:textColor="#757575"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:id="@+id/tvOverlayStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Checking..."
+                    android:textSize="13sp"
+                    android:paddingBottom="8dp"/>
+                <Button
+                    android:id="@+id/btnOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Open Overlay Permission"
+                    android:backgroundTint="#B71C1C"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
